@@ -1,0 +1,22 @@
+{
+  "name": "one-page-scroller.js",
+  "version": "0.1.0",
+  "homepage": "https://github.com/dominikmatt/one-page-scroller.js",
+  "authors": [
+    "dominikmatt <mail@matt-dominik.at>"
+  ],
+  "main": "src/scroller.js",
+  "keywords": [
+    "Scroller",
+    "one",
+    "page"
+  ],
+  "license": "Apache License",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
