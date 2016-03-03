@@ -2,11 +2,10 @@ var Scroller = function(options) {
     this.$document = $(document);
     this.$window = $(window);
     this.$el = $('html, body');
-    this.$nav = $('#navigation');
-    this.$sections = $('.content-section');
+    this.$nav = $(options.navigationContainerSelector);
+    this.$sections = $(options.contentSelector);
     this.selectedSection = '';
-    this.$lastSection = $('#intro-section');
-    this.$section = $('#intro-section');
+    this.$section = this.$sections.first();
     this.lastSection = '';
     this.sectionPosTop = 0;
     this.sectionLastPosTop = 0;
@@ -143,7 +142,7 @@ var Scroller = function(options) {
      */
     var handleTransform = function handleTransform(selector) {
         if (this.transforms[selector]) {
-            this.transforms[selector](this.$section, this.$lastSection);
+            this.transforms[selector](this.$section);
         }
     }.bind(this);
 
@@ -165,7 +164,7 @@ var Scroller = function(options) {
                 break;
             default:
             case 'selector':
-                var $el = $('.' + section + '-section');
+                var $el = $('#' + section + '-section');
                 var pos;
                 var distance;
 
