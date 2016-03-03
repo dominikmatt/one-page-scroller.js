@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>one-page-Scroller.js Example Animation</title>
+    <link rel="stylesheet" href="/examples/assets/css/example.css" type="text/css" />
+</head>
+<body>
+<nav class="navigation-container" id="navigation">
+    <a href="#" onclick="example.scroller.scrollTo('intro'); return false;" class="section-nav-intro navigation-item">Intro</a> <!-- add class "section-nav-{section-name} -->
+    <a href="#" onclick="example.scroller.scrollTo('one'); return false;" class="section-nav-one navigation-item">Section One</a>
+    <a href="#" onclick="example.scroller.scrollTo('two'); return false;" class="section-nav-two navigation-item">Section Two</a>
+    <a href="#" onclick="example.scroller.scrollTo('three'); return false;" class="section-nav-three navigation-item">Section Three</a>
+</nav>
+
+<!-- SECTION INTRO -->
+<article class="content" id="intro-section" data-section-url="intro" data-distance="0">
+    <h1>SECTION INTRO</h1>
+</article>
+
+<!-- SECTION ONE -->
+<article class="content" id="one-section" data-section-url="one" data-distance="-45"> <!-- distance == headerheight -->
+    <h1>SECTION ONE</h1>
+</article>
+
+<!-- SECTION TWO -->
+<article class="content" id="two-section" data-section-url="two" data-distance="-45"> <!-- distance == headerheight -->
+    <h1>SECTION TWO</h1>
+    <div class="image-container">
+        <img class="animate-image" src="http://lorempixel.com/400/200/" />
+    </div>
+</article>
+
+<!-- SECTION THREE -->
+<article class="content" id="three-section" data-section-url="three" data-distance="-45"> <!-- distance == headerheight -->
+    <h1>SECTION THREE</h1>
+</article>
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.1.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+<script type="text/javascript" src="/src/scroller.js"></script>
+<script type="text/javascript" src="/examples/assets/js/example-animation-animations.js"></script>
+<script type="text/javascript" src="/examples/assets/js/example-animation.js"></script>
+</body>
+</html>

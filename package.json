@@ -1,0 +1,28 @@
+{
+  "name": "one-page-scroller.js",
+  "version": "0.1.1",
+  "description": "===============",
+  "main": "src/scroller.js",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dominikmatt/one-page-scroller.js.git"
+  },
+  "author": "Dominik Matt <mail@matt-dominik.at>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/dominikmatt/one-page-scroller.js/issues"
+  },
+  "homepage": "https://github.com/dominikmatt/one-page-scroller.js#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-compass": "^2.1.0",
+    "gulp-connect": "^3.1.0",
+    "gulp-watch": "^4.3.5"
+  }
+}

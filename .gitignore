@@ -1,2 +1,5 @@
 .*
 !.gitignore
+bower_components/
+compass/
+node_modules/
